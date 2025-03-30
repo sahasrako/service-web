@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Service Hours</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        nav {
+            background: #0063e6;
+            padding: 1em;
+        }
+        nav a {
+            color: lightGreen;
+            text-decoration: none;
+            padding: 1em;
+            margin: 0 10px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        nav a:hover {
+            background: #005bb5;
+        }
+        .container {
+            padding: 20px;
+            display: none;
+        }
+        #home {
+            display: block;
+        }
+    </style>
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('.container').forEach(section => {
+                section.style.display = 'none';
+            });
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <nav>
+        <a onclick="showSection('home')">Home</a>
+        <a onclick="showSection('service')">Service</a>
+        <a onclick="showSection('creative')">Creative</a>
+        <a onclick="showSection('activity')">Activity</a>
+    </nav>
+
+    <div id="home" class="container">
+        <h2>Welcome to Student Service Hours</h2>
+        <p>Select a category above to find service opportunities.</p>
+    </div>
+
+    <div id="service" class="container">
+        <h2>Service Opportunities</h2>
+        <ul>
+            <li><a href="https://www.signupgenius.com/go/30E084AA4A729AB9-55436581-feeding#/" target="_blank">Feeding the hungry</a></li>
+            <li><a href="https://www.foo-moo.com/volunteer/8a883475-f129-483b-be0a-98cdb610a929" target="_blank">Plants removal volunteer</a></li>
+        </ul>
+    </div>
+
+  <div id="creative" class="container">
+      <h2>Creative Opportunities</h2>
+      <ul>
+          <li><a href="https://www.volunteermatch.org/search/opp3895274.jsp?_sid=AmeriCorps&utm_source=AmeriCorps_search_console&utm_campaign=AmeriCorps&utm_medium=referral" target="_blank">Painting Therapy</a></li>
+          <li><a href="https://volunteers.volunteerprincewilliam.org/need/detail/?need_id=1059491" target="_blank">Spend a day with a lucky dog</a></li>
+      </ul>
+  </div>
+
+    <div id="activity" class="container">
+        <h2>Activity-Based Opportunities</h2>
+        <ul>
+            <li><a href="https://nmss.galaxydigital.com/need/index?s=1&need_init_id=12324" target="_blank">Walk MS: Reston 2025</a></li>
+            <li><a href="https://www.volunteer.gov/s/volunteer-opportunity/a09SJ000007ALS9/theatreinthewoods-volunteer-2025" target="_blank">Theater in the woods</a></li>
+        </ul>
+    </div>
+</body>
+</html>
+
+  
